@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let financialProducts;
+    let sidebarExpanded = false;
 
     fetch('financial-products-data.json')
         .then(response => response.json())
@@ -9,6 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading financial products data:', error));
 
+    function showInitialContent() {
+        const contentArea = document.getElementById('contentArea');
+        contentArea.innerHTML = `
+            <h1>Financial Products</h1>
+            <p>Welcome to our comprehensive guide on financial products. Please select a category or product from the sidebar to view its details.</p>
+        `;
+    }
+
     function createProductList() {
         const productList = document.getElementById('productList');
         Object.entries(financialProducts).forEach(([category, categoryInfo]) => {
@@ -16,7 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const categorySpan = document.createElement('span');
             categorySpan.className = 'category';
             categorySpan.textContent = category;
-            categorySpan.addEventListener('click', () => showCategoryDetails(category));
+            categorySpan.addEventListener('click', (e) => {
+                e.stopPropagation();
+                li.classList.toggle('expanded');
+                showCategoryDetails(category);
+            });
             li.appendChild(categorySpan);
 
             const ul = document.createElement('ul');
@@ -24,12 +37,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 const productLi = document.createElement('li');
                 productLi.className = 'product';
                 productLi.textContent = product;
-                productLi.addEventListener('click', () => showProductDetails(category, product));
+                productLi.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    showProductDetails(category, product);
+                });
                 ul.appendChild(productLi);
             });
             li.appendChild(ul);
             productList.appendChild(li);
         });
+        showInitialContent();
     }
 
     function showCategoryDetails(category) {
@@ -76,4 +93,17 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>例子：</strong> ${productInfo.chinese.example}</p>
         `;
     }
+
+    const toggleSidebar = document.getElementById('toggleSidebar');
+    toggleSidebar.addEventListener('click', function() {
+        sidebarExpanded = !sidebarExpanded;
+        const categories = document.querySelectorAll('#productList > li');
+        categories.forEach(category => {
+            if (sidebarExpanded) {
+                category.classList.add('expanded');
+            } else {
+                category.classList.remove('expanded');
+            }
+        });
+    });
 });

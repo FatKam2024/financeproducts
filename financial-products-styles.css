@@ -52,3 +52,24 @@ ul {
 .chinese {
     font-family: "Microsoft JhengHei", "SimHei", sans-serif;
 }
+
+.sidebar ul ul {
+    display: none;
+}
+
+.sidebar .expanded > ul {
+    display: block;
+}
+
+#toggleSidebar {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#toggleSidebar:hover {
+    background-color: #45a049;
+}
