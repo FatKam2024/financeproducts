@@ -436,7 +436,7 @@
         }
       }
     }
-  }
+  },
   "外匯 (Foreign Exchange, Forex / 外匯)": {
     "description": {
       "english": "Foreign exchange involves the trading of currencies. It is the largest and most liquid financial market in the world.",
@@ -624,7 +624,7 @@
         }
       }
     }
-  }
+  },
   "衍生品 (Derivatives / 衍生品)": {
     "description": {
       "english": "Derivatives are financial contracts whose value is derived from the performance of an underlying entity, such as an asset, index, or entity.",
@@ -882,7 +882,7 @@
         }
       }
     }
-  }
+  },
   "保險產品 (Insurance Products / 保險產品)": {
     "description": {
       "english": "Insurance products are financial arrangements that provide protection against financial losses from specified risks in exchange for premium payments.",
