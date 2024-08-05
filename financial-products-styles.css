@@ -4,7 +4,7 @@
     --text-color: #333;
     --sidebar-text-color: #fff;
     --content-bg: white;
-    --hover-color: #fffacd; /* Light yellow color for hover */
+    --hover-border-color: #fffacd; /* Light yellow color for hover border */
     --financial-products-color: #3498db; /* Light blue color */
 }
 
@@ -47,21 +47,24 @@ ul {
     padding: 0;
 }
 
-.category {
+.category, .product {
     cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    transition: border 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.category {
     font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
 }
 
 .product {
-    cursor: pointer;
     margin-left: 20px;
-    margin-bottom: 5px;
 }
 
 .category:hover, .product:hover {
-    background-color: var(--hover-color);
+    border-color: var(--hover-border-color);
 }
 
 .chinese {
@@ -97,7 +100,7 @@ ul {
         --text-color: #f0f0f0;
         --sidebar-text-color: #f0f0f0;
         --content-bg: #333;
-        /* Hover color remains the same in dark mode */
+        /* Hover border color remains the same in dark mode */
     }
 }
 
@@ -107,7 +110,7 @@ body.light-mode {
     --text-color: #333;
     --sidebar-text-color: #fff;
     --content-bg: white;
-    /* Hover color remains the same in light mode */
+    /* Hover border color remains the same in light mode */
 }
 
 body.dark-mode {
@@ -116,5 +119,5 @@ body.dark-mode {
     --text-color: #f0f0f0;
     --sidebar-text-color: #f0f0f0;
     --content-bg: #333;
-    /* Hover color remains the same in dark mode */
+    /* Hover border color remains the same in dark mode */
 }
