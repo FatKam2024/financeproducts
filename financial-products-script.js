@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     let financialProducts;
     let sidebarExpanded = false;
 
-    fetch('financial-products-data.json')
-        .then(response => response.json())
-        .then(data => {
-            financialProducts = data;
-            createProductList();
-        })
-        .catch(error => console.error('Error loading financial products data:', error));
+    function showInitialContent() {
+        const contentArea = document.getElementById('contentArea');
+        contentArea.innerHTML = `
+            <h1>Comprehensive Guide to Financial Products</h1>
+            <p>Welcome to our comprehensive guide on financial products. Please select a category or product from the sidebar to view its details.</p>
+        `;
+    }
 
     function createProductList() {
         const productList = document.getElementById('productList');
@@ -86,6 +86,14 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
     }
 
+    fetch('financial-products-data.json')
+        .then(response => response.json())
+        .then(data => {
+            financialProducts = data;
+            createProductList();
+        })
+        .catch(error => console.error('Error loading financial products data:', error));
+
     const toggleSidebar = document.getElementById('toggleSidebar');
     toggleSidebar.addEventListener('click', function() {
         sidebarExpanded = !sidebarExpanded;
@@ -102,9 +110,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Theme toggle functionality
     const toggleTheme = document.getElementById('toggleTheme');
     toggleTheme.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        localStorage.setItem('darkMode', isDarkMode);
+        if (document.body.classList.contains('dark-mode')) {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.classList.remove('light-mode');
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        }
         updateThemeButtonText();
     });
 
@@ -113,10 +127,30 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleTheme.textContent = isDarkMode ? 'Light Mode' : 'Dark Mode';
     }
 
-    // Check for saved theme preference
-    const savedDarkMode = localStorage.getItem('darkMode');
-    if (savedDarkMode === 'true') {
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
         document.body.classList.add('dark-mode');
+    } else if (savedTheme === 'light') {
+        document.body.classList.add('light-mode');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark-mode');
+    } else {
+        document.body.classList.add('light-mode');
     }
     updateThemeButtonText();
+
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function(e) {
+        if (!localStorage.getItem('theme')) {
+            if (e.matches) {
+                document.body.classList.remove('light-mode');
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+                document.body.classList.add('light-mode');
+            }
+            updateThemeButtonText();
+        }
+    });
 });
