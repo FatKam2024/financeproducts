@@ -1,5 +1,5 @@
 {
-  "股票 (Stocks / 股票)": {
+  "股票 (Stocks)": {
     "description": {
       "english": "Stocks represent ownership in a company and offer potential returns through price appreciation and dividends.",
       "chinese": "股票代表公司的所有權，通過價格升值和股息提供潛在回報。"
@@ -71,7 +71,7 @@
       }
     }
   },
-  "債券 (Bonds / 債券)": {
+  "債券 (Bonds)": {
     "description": {
       "english": "Bonds are debt securities where investors lend money to an entity for a defined period at a variable or fixed interest rate.",
       "chinese": "債券是債務證券，投資者以可變或固定利率在定義的期限內向實體借款。"
@@ -175,7 +175,7 @@
       }
     }
   },
-  "貨幣市場工具 (Money Market Instruments / 貨幣市場工具)": {
+  "貨幣市場工具 (Money Market Instruments)": {
     "description": {
       "english": "Money market instruments are short-term debt securities that provide high liquidity and are considered very low-risk investments.",
       "chinese": "貨幣市場工具是短期債務證券，提供高流動性，被認為是非常低風險的投資。"
@@ -249,7 +249,7 @@
       }
     }
   },
-  "投資基金 (Investment Funds / 投資基金)": {
+  "投資基金 (Investment Funds)": {
     "description": {
       "english": "Investment funds pool money from multiple investors to invest in a diversified portfolio of securities.",
       "chinese": "投資基金將多個投資者的資金匯集在一起，投資於多元化的證券組合。"
@@ -325,7 +325,7 @@
       }
     }
   },
-  "期權 (Options / 期權)": {
+  "期權 (Options)": {
     "description": {
       "english": "Options are financial derivatives that give buyers the right, but not the obligation, to buy or sell an underlying asset at a specified price within a specific time period.",
       "chinese": "期權是金融衍生品，賦予買家在特定時間內以特定價格買入或賣出標的資產的權利，但不是義務。"
@@ -397,7 +397,7 @@
       }
     }
   },
-  "期貨 (Futures / 期貨)": {
+  "期貨 (Futures)": {
     "description": {
       "english": "Futures are standardized contracts obligating the buyer to purchase or the seller to sell a specific asset at a predetermined future date and price.",
       "chinese": "期貨是標準化合約，要求買方在預定的未來日期和價格購買特定資產，或賣方出售特定資產。"
@@ -437,7 +437,7 @@
       }
     }
   },
-  "外匯 (Foreign Exchange, Forex / 外匯)": {
+  "外匯 (Forex)": {
     "description": {
       "english": "Foreign exchange involves the trading of currencies. It is the largest and most liquid financial market in the world.",
       "chinese": "外匯涉及貨幣交易。它是世界上最大和最具流動性的金融市場。"
@@ -509,7 +509,7 @@
       }
     }
   },
-  "不動產投資信託 (Real Estate Investment Trusts, REITs / 不動產投資信託)": {
+  "不動產投資信託 (REITs)": {
     "description": {
       "english": "REITs are companies that own, operate, or finance income-generating real estate across a range of property sectors.",
       "chinese": "REITs是擁有、經營或為各種房地產部門的創收房地產提供融資的公司。"
@@ -583,49 +583,7 @@
       }
     }
   },
-  "衍生品 (Derivatives / 衍生品)": {
-    "description": {
-      "english": "Derivatives are financial contracts whose value is derived from the performance of an underlying entity, such as an asset, index, or entity.",
-      "chinese": "衍生品是其價值源自標的實體（如資產、指數或實體）表現的金融合約。"
-    },
-    "products": {
-      "互換合約 (Swaps)": {
-        "english": {
-          "definition": "Swaps are agreements between two parties to exchange sequences of cash flows for a set period of time.",
-          "keyFeatures": [
-            "Customizable: Can be tailored to meet specific needs",
-            "Risk Management: Used to hedge against various financial risks",
-            "No Exchange of Principal: Only the cash flows are exchanged",
-            "Over-the-Counter: Typically traded directly between parties, not on exchanges"
-          ],
-          "types": [
-            "Interest Rate Swaps: Exchange of fixed and floating interest rate payments",
-            "Currency Swaps: Exchange of principal and interest payments in different currencies",
-            "Credit Default Swaps: Protection against credit risk",
-            "Commodity Swaps: Exchange of fixed and floating prices of commodities"
-          ],
-          "example": "A company swaps its floating-rate interest payments for fixed-rate payments to protect against rising interest rates."
-        },
-        "chinese": {
-          "definition": "互換是兩方之間在一定時期內交換一系列現金流的協議。",
-          "keyFeatures": [
-            "可定制：可以根據特定需求定制",
-            "風險管理：用於對沖各種金融風險",
-            "不交換本金：只交換現金流",
-            "場外交易：通常直接在雙方之間交易，而不是在交易所"
-          ],
-          "types": [
-            "利率互換：固定和浮動利率支付的交換",
-            "貨幣互換：不同貨幣的本金和利息支付的交換",
-            "信用違約互換：對信用風險的保護",
-            "商品互換：商品固定和浮動價格的交換"
-          ],
-          "example": "一家公司將其浮動利率支付互換為固定利率支付，以防範利率上升。"
-        }
-      }
-    }
-  },
-  "衍生品 (Derivatives / 衍生品)": {
+  "衍生品 (Derivatives)": {
     "description": {
       "english": "Derivatives are financial contracts whose value is derived from the performance of an underlying entity, such as an asset, index, or entity.",
       "chinese": "衍生品是其價值源自標的實體（如資產、指數或實體）表現的金融合約。"
@@ -731,7 +689,7 @@
       }
     }
   },
-  "商品 (Commodities / 商品)": {
+  "商品 (Commodities)": {
     "description": {
       "english": "Commodities are raw materials or primary agricultural products that can be bought and sold, such as gold, oil, or wheat.",
       "chinese": "商品是可以買賣的原材料或初級農產品，如黃金、石油或小麥。"
@@ -807,83 +765,7 @@
       }
     }
   },
-  "保險產品 (Insurance Products / 保險產品)": {
-    "description": {
-      "english": "Insurance products are financial arrangements that provide protection against financial losses from specified risks in exchange for premium payments.",
-      "chinese": "保險產品是通過支付保費來提供對特定風險的財務損失保護的金融安排。"
-    },
-    "products": {
-      "人壽保險 (Life Insurance)": {
-        "english": {
-          "definition": "Life insurance provides a financial benefit to beneficiaries upon the death of the insured person.",
-          "keyFeatures": [
-            "Death Benefit: Pays out a lump sum to beneficiaries",
-            "Premium Payments: Regular payments to maintain coverage",
-            "Cash Value: Some policies accumulate cash value over time",
-            "Tax Benefits: Death benefits are often tax-free to beneficiaries"
-          ],
-          "types": [
-            "Term Life Insurance: Provides coverage for a specific period",
-            "Whole Life Insurance: Provides lifelong coverage with a savings component",
-            "Universal Life Insurance: Flexible premiums and death benefits",
-            "Variable Life Insurance: Allows investment of the cash value portion"
-          ],
-          "example": "Purchasing a 20-year term life insurance policy with a $500,000 death benefit."
-        },
-        "chinese": {
-          "definition": "人壽保險在被保險人死亡時向受益人提供財務利益。",
-          "keyFeatures": [
-            "死亡給付：向受益人支付一筆款項",
-            "保費支付：定期支付以維持保障",
-            "現金價值：某些保單隨時間積累現金價值",
-            "稅收優惠：死亡給付通常對受益人免稅"
-          ],
-          "types": [
-            "定期人壽保險：提供特定期限的保障",
-            "終身壽險：提供終身保障，帶有儲蓄組成部分",
-            "萬能壽險：靈活的保費和死亡給付",
-            "變額壽險：允許投資現金價值部分"
-          ],
-          "example": "購買一份20年期、死亡給付為50萬美元的定期人壽保險。"
-        }
-      },
-      "健康保險 (Health Insurance)": {
-        "english": {
-          "definition": "Health insurance covers medical expenses incurred due to illness, injury, or preventive care.",
-          "keyFeatures": [
-            "Premium Payments: Regular payments for coverage",
-            "Deductibles: Amount paid out-of-pocket before insurance coverage begins",
-            "Copayments: Fixed amounts paid for certain services",
-            "Network Providers: List of healthcare providers covered by the plan"
-          ],
-          "types": [
-            "Health Maintenance Organization (HMO): Focuses on prevention and wellness",
-            "Preferred Provider Organization (PPO): Offers more flexibility in choosing providers",
-            "Exclusive Provider Organization (EPO): Combines features of HMO and PPO",
-            "High-Deductible Health Plan (HDHP): Lower premiums but higher deductibles"
-          ],
-          "example": "Enrolling in an employer-sponsored PPO health insurance plan with a $1,000 annual deductible."
-        },
-        "chinese": {
-          "definition": "健康保險覆蓋因疾病、受傷或預防性護理而產生的醫療費用。",
-          "keyFeatures": [
-            "保費支付：定期支付以獲得保障",
-            "自付額：保險保障開始前需自付的金額",
-            "共付額：為某些服務支付的固定金額",
-            "網絡提供者：計劃覆蓋的醫療服務提供者清單"
-          ],
-          "types": [
-            "健康維護組織（HMO）：專注於預防和保健",
-            "優選提供者組織（PPO）：在選擇提供者方面提供更多靈活性",
-            "專屬提供者組織（EPO）：結合HMO和PPO的特點",
-            "高自付額健康計劃（HDHP）：保費較低但自付額較高"
-          ],
-          "example": "參加雇主贊助的PPO健康保險計劃，年度自付額為1,000美元。"
-        }
-      }
-    }
-  },
-  "保險產品 (Insurance Products / 保險產品)": {
+  "保險產品 (Insurance Products)": {
     "description": {
       "english": "Insurance products are financial arrangements that provide protection against financial losses from specified risks in exchange for premium payments.",
       "chinese": "保險產品是通過支付保費來提供對特定風險的財務損失保護的金融安排。"
@@ -1027,7 +909,7 @@
       }
     }
   },
-  "結構性產品 (Structured Products / 結構性產品)": {
+  "結構性產品 (Structured Products)": {
     "description": {
       "english": "Structured products are pre-packaged investments that normally include assets linked to interest plus one or more derivatives.",
       "chinese": "結構性產品是預先包裝的投資，通常包括與利息掛鉤的資產加上一個或多個衍生品。"
