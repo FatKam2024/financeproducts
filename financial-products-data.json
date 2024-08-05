@@ -249,7 +249,7 @@
       }
     }
   },
-"投資基金 (Investment Funds / 投資基金)": {
+  "投資基金 (Investment Funds / 投資基金)": {
     "description": {
       "english": "Investment funds pool money from multiple investors to invest in a diversified portfolio of securities.",
       "chinese": "投資基金將多個投資者的資金匯集在一起，投資於多元化的證券組合。"
@@ -437,7 +437,7 @@
       }
     }
   }
-"外匯 (Foreign Exchange, Forex / 外匯)": {
+  "外匯 (Foreign Exchange, Forex / 外匯)": {
     "description": {
       "english": "Foreign exchange involves the trading of currencies. It is the largest and most liquid financial market in the world.",
       "chinese": "外匯涉及貨幣交易。它是世界上最大和最具流動性的金融市場。"
@@ -625,7 +625,7 @@
       }
     }
   }
-"衍生品 (Derivatives / 衍生品)": {
+  "衍生品 (Derivatives / 衍生品)": {
     "description": {
       "english": "Derivatives are financial contracts whose value is derived from the performance of an underlying entity, such as an asset, index, or entity.",
       "chinese": "衍生品是其價值源自標的實體（如資產、指數或實體）表現的金融合約。"
@@ -883,7 +883,7 @@
       }
     }
   }
-"保險產品 (Insurance Products / 保險產品)": {
+  "保險產品 (Insurance Products / 保險產品)": {
     "description": {
       "english": "Insurance products are financial arrangements that provide protection against financial losses from specified risks in exchange for premium payments.",
       "chinese": "保險產品是通過支付保費來提供對特定風險的財務損失保護的金融安排。"
