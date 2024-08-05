@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let financialProducts;
+
+    fetch('financial-products-data.json')
+        .then(response => response.json())
+        .then(data => {
+            financialProducts = data;
+            createProductList();
+        })
+        .catch(error => console.error('Error loading financial products data:', error));
+
     function createProductList() {
         const productList = document.getElementById('productList');
         for (const category in financialProducts) {
@@ -65,6 +75,4 @@ document.addEventListener('DOMContentLoaded', function() {
             <p><strong>例子：</strong> ${productInfo.chinese.example}</p>
         `;
     }
-
-    createProductList();
 });

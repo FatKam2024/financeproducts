@@ -1,4 +1,4 @@
-const financialProducts = {
+{
   "股票 (Stocks / 股票)": {
     "description": {
       "english": "Stocks represent ownership in a company and offer potential returns through price appreciation and dividends.",
@@ -111,4 +111,4 @@ const financialProducts = {
       }
     }
   }
-};
+}
