@@ -2,8 +2,10 @@
     --bg-color: #f0f0f0;
     --sidebar-bg: #333;
     --text-color: #333;
+    --sidebar-text-color: #fff;
     --content-bg: white;
     --hover-color: #e0e0e0;
+    --financial-products-color: #3498db; /* Light blue color */
 }
 
 body {
@@ -22,8 +24,12 @@ body {
 .sidebar {
     width: 250px;
     background-color: var(--sidebar-bg);
-    color: white;
+    color: var(--sidebar-text-color);
     padding: 20px;
+}
+
+.sidebar h2 {
+    color: var(--financial-products-color);
 }
 
 .content {
@@ -84,14 +90,34 @@ ul {
 }
 
 /* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #222;
+        --sidebar-bg: #444;
+        --text-color: #f0f0f0;
+        --sidebar-text-color: #f0f0f0;
+        --content-bg: #333;
+        --hover-color: #555;
+        /* Financial Products color remains the same in dark mode */
+    }
+}
+
+body.light-mode {
+    --bg-color: #f0f0f0;
+    --sidebar-bg: #333;
+    --text-color: #333;
+    --sidebar-text-color: #fff;
+    --content-bg: white;
+    --hover-color: #e0e0e0;
+    /* Financial Products color remains the same in light mode */
+}
+
 body.dark-mode {
     --bg-color: #222;
     --sidebar-bg: #444;
     --text-color: #f0f0f0;
+    --sidebar-text-color: #f0f0f0;
     --content-bg: #333;
     --hover-color: #555;
-}
-
-body.dark-mode .sidebar {
-    color: #f0f0f0;
+    /* Financial Products color remains the same in dark mode */
 }
