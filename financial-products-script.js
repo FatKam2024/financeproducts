@@ -10,14 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .catch(error => console.error('Error loading financial products data:', error));
 
-    function showInitialContent() {
-        const contentArea = document.getElementById('contentArea');
-        contentArea.innerHTML = `
-            <h1>Financial Products</h1>
-            <p>Welcome to our comprehensive guide on financial products. Please select a category or product from the sidebar to view its details.</p>
-        `;
-    }
-
     function createProductList() {
         const productList = document.getElementById('productList');
         Object.entries(financialProducts).forEach(([category, categoryInfo]) => {
