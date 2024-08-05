@@ -1,0 +1,114 @@
+const financialProducts = {
+  "股票 (Stocks / 股票)": {
+    "description": {
+      "english": "Stocks represent ownership in a company and offer potential returns through price appreciation and dividends.",
+      "chinese": "股票代表公司的所有權，通過價格升值和股息提供潛在回報。"
+    },
+    "products": {
+      "普通股 (Common Stocks)": {
+        "english": {
+          "definition": "Common stocks represent ownership in a company and typically come with voting rights.",
+          "keyFeatures": [
+            "Ownership: Shareholders own a portion of the company",
+            "Voting Rights: Often come with voting rights in company decisions",
+            "Dividends: May pay regular dividends",
+            "Capital Appreciation: Potential for increase in share price"
+          ],
+          "types": [
+            "Blue-chip Stocks: Shares of well-established companies",
+            "Growth Stocks: Shares of companies expected to grow faster than average",
+            "Value Stocks: Shares believed to be undervalued in the market"
+          ],
+          "example": "Purchasing shares of Apple Inc. (AAPL) on the stock market."
+        },
+        "chinese": {
+          "definition": "普通股代表公司的所有權，通常附帶投票權。",
+          "keyFeatures": [
+            "所有權：股東擁有公司的一部分",
+            "投票權：通常在公司決策中擁有投票權",
+            "股息：可能定期支付股息",
+            "資本增值：股價上漲的潛力"
+          ],
+          "types": [
+            "藍籌股：知名且穩定的公司股票",
+            "成長股：預期增長速度高於平均水平的公司股票",
+            "價值股：被認為在市場中被低估的股票"
+          ],
+          "example": "在股市上購買蘋果公司(AAPL)的股票。"
+        }
+      },
+      "優先股 (Preferred Stocks)": {
+        "english": {
+          "definition": "Preferred stocks are a class of ownership that has a higher claim on assets and earnings than common stock.",
+          "keyFeatures": [
+            "Fixed Dividends: Usually pay a fixed dividend",
+            "Priority: Have priority over common stockholders in dividend payments and asset claims",
+            "No Voting Rights: Typically do not come with voting rights",
+            "Convertibility: Some may be convertible to common stock"
+          ],
+          "types": [
+            "Cumulative Preferred Stock: Unpaid dividends accumulate",
+            "Non-cumulative Preferred Stock: Unpaid dividends do not accumulate",
+            "Convertible Preferred Stock: Can be converted to common stock"
+          ],
+          "example": "Investing in Bank of America Series L Preferred Stock (BAC.PRL)."
+        },
+        "chinese": {
+          "definition": "優先股是一種所有權類別，在資產和收益方面的索賠權高於普通股。",
+          "keyFeatures": [
+            "固定股息：通常支付固定股息",
+            "優先權：在股息支付和資產索賠方面優先於普通股股東",
+            "無投票權：通常不附帶投票權",
+            "可轉換性：有些可轉換為普通股"
+          ],
+          "types": [
+            "累積優先股：未支付的股息會累積",
+            "非累積優先股：未支付的股息不會累積",
+            "可轉換優先股：可轉換為普通股"
+          ],
+          "example": "投資美國銀行L系列優先股 (BAC.PRL)。"
+        }
+      }
+    }
+  },
+  "債券 (Bonds / 債券)": {
+    "description": {
+      "english": "Bonds are debt securities where investors lend money to an entity for a defined period at a variable or fixed interest rate.",
+      "chinese": "債券是債務證券，投資者以可變或固定利率在定義的期限內向實體借款。"
+    },
+    "products": {
+      "政府債券 (Government Bonds)": {
+        "english": {
+          "definition": "Government bonds are debt securities issued by a national government to support government spending and obligations.",
+          "keyFeatures": [
+            "Low Risk: Generally considered one of the safest investments",
+            "Regular Interest Payments: Typically pay interest semi-annually",
+            "Various Maturities: Available in short-term, medium-term, and long-term",
+            "Liquidity: Highly liquid and easily tradable"
+          ],
+          "types": [
+            "Treasury Bills: Short-term securities maturing in one year or less",
+            "Treasury Notes: Medium-term securities maturing in 2 to 10 years",
+            "Treasury Bonds: Long-term securities maturing in more than 10 years"
+          ],
+          "example": "Purchasing a 10-year U.S. Treasury Note with a 2% annual coupon rate."
+        },
+        "chinese": {
+          "definition": "政府債券是由國家政府發行的債務證券，用於支持政府支出和義務。",
+          "keyFeatures": [
+            "低風險：通常被認為是最安全的投資之一",
+            "定期利息支付：通常每半年支付一次利息",
+            "不同期限：有短期、中期和長期選擇",
+            "流動性：高度流動且易於交易"
+          ],
+          "types": [
+            "國庫券：一年或更短期限的短期證券",
+            "國庫票據：2至10年期限的中期證券",
+            "國庫債券：10年以上期限的長期證券"
+          ],
+          "example": "購買年利率為2%的10年期美國國庫票據。"
+        }
+      }
+    }
+  }
+};

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Guide to Financial Products</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            height: 100%;
+        }
+        .sidebar {
+            background-color: #f0f0f0;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .content {
+            padding: 20px;
+            overflow-y: auto;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .category, .product {
+            cursor: pointer;
+            color: #0066cc;
+        }
+        .category:hover, .product:hover {
+            text-decoration: underline;
+        }
+        .chinese {
+            font-family: "Microsoft JhengHei", Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Financial Products</h2>
+            <ul id="productList">
+                <!-- Product list will be dynamically inserted here -->
+            </ul>
+        </div>
+        <div class="content" id="contentArea">
+            <h1>Comprehensive Guide to Financial Products</h1>
+            <p>Click on a category or product in the sidebar to view its details.</p>
+        </div>
+    </div>
+
+    <script src="financial-products-data.js"></script>
+    <script src="financial-products-script.js"></script>
+</body>
+</html>
