@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category {
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.category:hover, .product:hover {
+    text-decoration: underline;
+}
+
+.chinese {
+    font-family: "Microsoft JhengHei", "SimHei", sans-serif;
+}

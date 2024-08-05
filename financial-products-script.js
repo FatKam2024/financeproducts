@@ -11,24 +11,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createProductList() {
         const productList = document.getElementById('productList');
-        for (const category in financialProducts) {
+        Object.entries(financialProducts).forEach(([category, categoryInfo]) => {
             const li = document.createElement('li');
             const categorySpan = document.createElement('span');
             categorySpan.className = 'category';
             categorySpan.textContent = category;
-            categorySpan.onclick = () => showCategoryDetails(category);
+            categorySpan.addEventListener('click', () => showCategoryDetails(category));
             li.appendChild(categorySpan);
+
             const ul = document.createElement('ul');
-            for (const product in financialProducts[category].products) {
+            Object.keys(categoryInfo.products).forEach(product => {
                 const productLi = document.createElement('li');
                 productLi.className = 'product';
                 productLi.textContent = product;
-                productLi.onclick = () => showProductDetails(category, product);
+                productLi.addEventListener('click', () => showProductDetails(category, product));
                 ul.appendChild(productLi);
-            }
+            });
             li.appendChild(ul);
             productList.appendChild(li);
-        }
+        });
     }
 
     function showCategoryDetails(category) {
