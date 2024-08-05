@@ -4,7 +4,7 @@
     --text-color: #333;
     --sidebar-text-color: #fff;
     --content-bg: white;
-    --hover-color: #e0e0e0;
+    --hover-color: #fffacd; /* Light yellow color for hover */
     --financial-products-color: #3498db; /* Light blue color */
 }
 
@@ -97,8 +97,7 @@ ul {
         --text-color: #f0f0f0;
         --sidebar-text-color: #f0f0f0;
         --content-bg: #333;
-        --hover-color: #555;
-        /* Financial Products color remains the same in dark mode */
+        /* Hover color remains the same in dark mode */
     }
 }
 
@@ -108,8 +107,7 @@ body.light-mode {
     --text-color: #333;
     --sidebar-text-color: #fff;
     --content-bg: white;
-    --hover-color: #e0e0e0;
-    /* Financial Products color remains the same in light mode */
+    /* Hover color remains the same in light mode */
 }
 
 body.dark-mode {
@@ -118,6 +116,5 @@ body.dark-mode {
     --text-color: #f0f0f0;
     --sidebar-text-color: #f0f0f0;
     --content-bg: #333;
-    --hover-color: #555;
-    /* Financial Products color remains the same in dark mode */
+    /* Hover color remains the same in dark mode */
 }
