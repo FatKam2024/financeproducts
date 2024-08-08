@@ -77,6 +77,7 @@ ul {
     margin-bottom: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 5px;
+    display: block;
 }
 
 .category {
