@@ -25,12 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
             categorySpan.addEventListener('click', () => {
                 const expanded = li.classList.toggle('expanded');
                 categorySpan.setAttribute('aria-expanded', expanded);
+                document.querySelectorAll('.category').forEach(el => el.classList.remove('selected'));
+                categorySpan.classList.add('selected');
                 showCategoryDetails(category);
             });
             categorySpan.addEventListener('keypress', (e) => {
                 if (e.key === 'Enter') {
                     const expanded = li.classList.toggle('expanded');
                     categorySpan.setAttribute('aria-expanded', expanded);
+                    document.querySelectorAll('.category').forEach(el => el.classList.remove('selected'));
+                    categorySpan.classList.add('selected');
                     showCategoryDetails(category);
                 }
             });
@@ -44,10 +48,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 productLi.tabIndex = 0;
                 productLi.setAttribute('role', 'button');
                 productLi.addEventListener('click', () => {
+                    document.querySelectorAll('.product').forEach(el => el.classList.remove('selected'));
+                    productLi.classList.add('selected');
                     showProductDetails(category, product);
                 });
                 productLi.addEventListener('keypress', (e) => {
                     if (e.key === 'Enter') {
+                        document.querySelectorAll('.product').forEach(el => el.classList.remove('selected'));
+                        productLi.classList.add('selected');
                         showProductDetails(category, product);
                     }
                 });
