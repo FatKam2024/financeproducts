@@ -1,23 +1,37 @@
 :root {
-    --bg-color: #f0f0f0;
-    --sidebar-bg: #333;
-    --text-color: #333;
-    --sidebar-text-color: #fff;
-    --content-bg: white;
-    --hover-border-color: #fffacd; /* Light yellow color for hover border */
-    --financial-products-color: #3498db; /* Light blue color */
+    --bg-color: #f9f9f9;
+    --sidebar-bg: #2c3e50;
+    --text-color: #2c3e50;
+    --sidebar-text-color: #ecf0f1;
+    --content-bg: #ecf0f1;
+    --hover-bg-color: #3498db;
+    --hover-text-color: #ecf0f1;
+    --financial-products-color: #2980b9;
+    --primary-font: 'Helvetica Neue', Arial, sans-serif;
+    --header-bg: #2980b9;
+    --header-text-color: #ecf0f1;
+    --footer-bg: #2c3e50;
+    --footer-text-color: #ecf0f1;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--primary-font);
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
 
+header {
+    background-color: var(--header-bg);
+    color: var(--header-text-color);
+    padding: 20px;
+    text-align: center;
+}
+
 .container {
     display: flex;
+    flex-wrap: wrap;
     min-height: 100vh;
 }
 
@@ -26,16 +40,23 @@ body {
     background-color: var(--sidebar-bg);
     color: var(--sidebar-text-color);
     padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
 }
 
 .sidebar h2 {
     color: var(--financial-products-color);
+    margin-bottom: 1em;
 }
 
 .content {
     flex-grow: 1;
     padding: 20px;
     background-color: var(--content-bg);
+    min-width: 300px;
 }
 
 h1, h2, h3, h4 {
@@ -49,10 +70,10 @@ ul {
 
 .category, .product {
     cursor: pointer;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 5px;
-    transition: border 0.3s ease;
-    border: 2px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
 }
 
 .category {
@@ -64,7 +85,8 @@ ul {
 }
 
 .category:hover, .product:hover {
-    border-color: var(--hover-border-color);
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
 }
 
 .chinese {
@@ -81,43 +103,32 @@ ul {
 
 #toggleSidebar, #toggleTheme {
     margin-bottom: 10px;
-    padding: 5px 10px;
-    background-color: #4CAF50;
+    padding: 10px 15px;
+    background-color: #3498db;
     color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 #toggleSidebar:hover, #toggleTheme:hover {
-    background-color: #45a049;
+    background-color: #2980b9;
 }
 
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg-color: #222;
-        --sidebar-bg: #444;
-        --text-color: #f0f0f0;
-        --sidebar-text-color: #f0f0f0;
-        --content-bg: #333;
-        /* Hover border color remains the same in dark mode */
-    }
-}
-
-body.light-mode {
-    --bg-color: #f0f0f0;
-    --sidebar-bg: #333;
-    --text-color: #333;
-    --sidebar-text-color: #fff;
-    --content-bg: white;
-    /* Hover border color remains the same in light mode */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 body.dark-mode {
-    --bg-color: #222;
-    --sidebar-bg: #444;
-    --text-color: #f0f0f0;
-    --sidebar-text-color: #f0f0f0;
-    --content-bg: #333;
-    /* Hover border color remains the same in dark mode */
+    --bg-color: #2c3e50;
+    --sidebar-bg: #34495e;
+    --text-color: #ecf0f1;
+    --sidebar-text-color: #ecf0f1;
+    --content-bg: #34495e;
 }

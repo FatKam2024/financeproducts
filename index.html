@@ -7,18 +7,26 @@
     <link rel="stylesheet" href="financial-products-styles.css">
 </head>
 <body>
+    <header>
+        <h1>Comprehensive Guide to Financial Products</h1>
+    </header>
     <div class="container">
-        <div class="sidebar">
+        <nav class="sidebar" role="navigation" aria-label="Sidebar with financial product categories">
             <h2>Financial Products</h2>
-            <button id="toggleSidebar">Expand/Collapse All</button>
+            <button id="toggleSidebar" aria-expanded="false" aria-controls="productList">Expand/Collapse All</button>
             <button id="toggleTheme">Dark Mode</button>
             <ul id="productList"></ul>
-        </div>
-        <div id="contentArea" class="content" role="main">
-            <h1>Comprehensive Guide to Financial Products</h1>
-            <p>Welcome to our comprehensive guide on financial products. Please select a category or product from the sidebar to view its details.</p>
-        </div>
+        </nav>
+        <main id="contentArea" class="content" role="main">
+            <section>
+                <h2>Welcome</h2>
+                <p>Welcome to our comprehensive guide on financial products. Please select a category or product from the sidebar to view its details.</p>
+            </section>
+        </main>
     </div>
+    <footer>
+        <p>&copy; 2024 Financial Products Guide. All rights reserved.</p>
+    </footer>
     <script src="financial-products-script.js"></script>
 </body>
 </html>
