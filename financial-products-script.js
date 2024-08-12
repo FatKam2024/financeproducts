@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleSidebar = document.getElementById('toggleSidebar');
     toggleSidebar.addEventListener('click', function() {
         sidebarExpanded = !sidebarExpanded;
+	    document.querySelector('.sidebar').classList.toggle('expanded', sidebarExpanded);
         const categories = document.querySelectorAll('#productList > li');
         categories.forEach(category => {
             category.classList.toggle('expanded', sidebarExpanded);
